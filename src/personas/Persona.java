@@ -4,6 +4,7 @@
  */
 package personas;
 import java.time.LocalDate;
+import java.time.Period;
 
 /**
  *
@@ -26,6 +27,10 @@ public class Persona {
     
     public LocalDate  getFechadenacimiento(){
         return this.fechadenacimiento;
+    }
+    public int getEdad(){
+        return Period.between(fechadenacimiento,LocalDate.now()).getYears();
+        
     }
      
     public Persona(String nombre, String nacionalidad, LocalDate fechadenacimiento) {
