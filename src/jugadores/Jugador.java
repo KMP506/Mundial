@@ -9,6 +9,6 @@ package jugadores;
  * @author ylpjk
  */
 public class Jugador {
-    
+    protected 
     
 }
