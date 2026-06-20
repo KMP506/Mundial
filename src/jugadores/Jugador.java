@@ -41,26 +41,32 @@ public class Jugador {
 
     public String getFecha() {
         return fecha;
+        
     }
 
     public void setFecha(String fecha) {
         this.fecha = fecha;
+        
     }
 
     public int getNumero() {
         return numero;
+        
     }
 
     public void setNumero(int numero) {
         this.numero = numero;
+        
     }
 
     public String getPosicion() {
         return posicion;
+        
     }
 
     public void setPosicion(String posicion) {
         this.posicion = posicion;
+        
     }
 
     @Override
