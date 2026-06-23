@@ -4,7 +4,7 @@
  */
 package personas;
 import java.time.LocalDate;
-import java.time.Period;
+
 
 /**
  *
@@ -13,38 +13,34 @@ import java.time.Period;
 public class Persona {
     protected String nombre;
     protected String nacionalidad;
-    protected LocalDate fechadenacimiento;
-   
+    protected  LocalDate fechaNacimiento;
+    protected int edad;
 
-    
-    public String getNombre(){
-        return this.nombre;
+    public String getNombre() {
+        return nombre;
     }
-    
-    public String  getNacionalidad(){
-        return this.nacionalidad;
+
+    public String getNacionalidad() {
+        return nacionalidad;
     }
-    
-    public LocalDate  getFechadenacimiento(){
-        return this.fechadenacimiento;
+
+    public LocalDate getFechaNacimiento() {
+        return fechaNacimiento;
     }
-    public int getEdad(){
-        return Period.between(fechadenacimiento,LocalDate.now()).getYears();
-        
+    public int getEdad() {
+        return this.edad;
     }
-     
-    public Persona(String nombre, String nacionalidad, LocalDate fechadenacimiento) {
+
+    public Persona(String nombre, String nacionalidad, LocalDate fechaNacimiento) {
         this.nombre = nombre;
         this.nacionalidad = nacionalidad;
-        this.fechadenacimiento = fechadenacimiento;
-       
-    
-    }
-
-    @Override
-    public String toString() {
-        return  "nombre=" + nombre + ", nacionalidad=" + nacionalidad + ", fechadenacimiento=" + fechadenacimiento;
+        this.fechaNacimiento = fechaNacimiento;
+        this.edad = edad;
     }
     
+    public String toSrting(){
+        return "Nombre:"+nombre+"\nNacionalidad"+nacionalidad+ "Edad" + edad +
+                "\nFecha Nacimiento"+fechaNacimiento;
+    }
     
 }
