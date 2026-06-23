@@ -8,7 +8,7 @@ package selecciones;
  *
  * @author monto
  */
-public class Seleccion {
+public class seleccion {
     protected String nombre;
     protected String grupo;
     protected int entrenadores;
@@ -90,7 +90,7 @@ public class Seleccion {
        return contaJugador;
    }
    
-   public Seleccion(String nombre, String grupo, int entrenadores ) {
+   public seleccion(String nombre, String grupo, int entrenadores ) {
         this.nombre = nombre;
         this.grupo = grupo;
         this.entrenadores = entrenadores;
