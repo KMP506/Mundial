@@ -90,6 +90,9 @@ public class seleccion {
        return contaJugador;
    }
    
+   
+   
+   
    public seleccion(String nombre, String grupo, int entrenadores ) {
         this.nombre = nombre;
         this.grupo = grupo;
